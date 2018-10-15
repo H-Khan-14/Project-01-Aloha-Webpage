@@ -1,0 +1,371 @@
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src: url(../project-01/fonts/PlayfairDisplay-Bold.otf);
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  src: url(../project-01/fonts/PlayfairDisplay-BoldItalic.otf);
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url(../project-01/fonts/PlayfairDisplay-Italic.otf);
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url(../project-01/fonts/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url(../project-01/fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-LightItallic';
+  src: url(../project-01/fonts/Raleway-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url(../project-01/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-MediumItalic';
+  src: url(../project-01/fonts/Raleway-MediumItalic.ttf);
+}
+
+body {
+  margin: 0 0;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.navigation-bar {
+  font-family: 'Raleway-Medium';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #e2574c;
+}
+
+.aloha-logo-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.cart-icon-right {
+  padding-right: 25px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.red-integer {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Raleway-Medium';
+}
+
+#logo-work-plz {
+  height: 8vh;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/banner-girl.png) no-repeat top 15vh center,
+    url(./images/flower-bkgd.jpg) repeat center center;
+  background-size: auto 105vh, auto 100vh;
+  height: 95vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PlayfairDisplay-Regular';
+}
+
+.dif-font-banner {
+  font-family: 'Raleway-Medium';
+  font-size: 1.5rem;
+  margin-top: 4em;
+  margin-bottom: -1em;
+}
+
+.big-text {
+  font-size: 4rem;
+}
+
+.bbanner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.bbanner-text h3 {
+  font-family: 'Raleway-Light';
+  margin-top: 0em;
+  color: #969696;
+}
+
+.dual-font {
+  font-family: 'PlayfairDisplay-Italic';
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: #2d2d2d;
+}
+
+.dual-font span {
+  font-family: 'PlayfairDisplay-Bold';
+}
+
+.category-frame {
+  font-family: 'Raleway-Medium';
+  font-size: 1.5em;
+  width: 100%;
+  height: 90vh;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-rows: repeat(2, minmax(max-content, 1fr));
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+  grid-template-areas:
+    'a a b c'
+    'd e f f';
+}
+
+.category-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../project-01/images/mens-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.category-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/trends-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.category-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/glasses-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.category-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/sale-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.category-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/bags-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.category-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./images/womens-category.jpg) no-repeat center;
+  background-size: cover;
+  grid-area: f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.nav-space {
+  margin: auto 2.5rem;
+}
+
+.above-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  font-family: 'PlayfairDisplay-Italic';
+  color: #2d2d2d;
+}
+
+.above-carousel span {
+  font-family: 'PlayfairDisplay-Bold';
+}
+
+.main-carousel {
+  padding-bottom: 7vh;
+}
+
+.main-carousel p {
+  font-family: 'Raleway-Light';
+  color: #969696;
+}
+
+.main-carousel h3 {
+  color: #e2574c;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.add-button {
+  color: white;
+  background-color: black;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.bottom-banner {
+  background: url(./images/wave-bkgd.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bottom-banner h1 {
+  font-family: 'PlayfairDisplay-Italic';
+}
+
+.bottom-banner h1 span {
+  font-family: 'PlayfairDisplay-Bold';
+}
+
+.bottom-banner h3 {
+  font-family: 'Raleway-Light';
+}
+
+.little-space {
+  margin-top: 0rem;
+}
+
+.subscribe-button {
+  position: relative;
+}
+
+.button {
+  margin-bottom: 0;
+  border-radius: 3rem;
+  background-color: #e2574c;
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Raleway-Medium';
+  font-size: 1rem;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.input-email {
+  font-family: 'Raleway-Light';
+  padding: 0.85rem 10rem;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 3rem;
+}
+
+.left-stuff {
+  padding-left: 35px;
+  font-family: 'PlayfairDisplay-Regular';
+}
+
+.left-stuff span {
+  color: #969696;
+}
+
+.spacer {
+  margin: 2rem auto;
+}
+
+.nospace {
+  margin-top: -1rem;
+}
+
+.left-stuff .underline {
+  text-decoration: underline;
+  color: white;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242424;
+  color: white;
+  padding-bottom: 30px;
+  height: 40vh;
+}
+
+.right-stuff .fa {
+  width: 30px;
+}
+
+.right-stuff {
+  padding-right: 7rem;
+  font-family: 'Raleway-Light';
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

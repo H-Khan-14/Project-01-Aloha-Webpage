@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aloha Apparel Co.</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="./Aloha-P1.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="Aloha-P1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="aloha-logo-left">
+      <img id="logo-work-plz" src="./images/aloha-logo.svg" alt="aloha-logo" height="75px">
+    </div>
+    <div class="navigation-bar">
+      <div class="nav-space">ABOUT</div>
+      <!--RalewayMedium-->
+      <div class="nav-space">SHOP</div>
+      <div class="nav-space">FEATURED</div>
+      <div class="nav-space">UPDATES</div>
+    </div>
+    <div class="cart-icon-right">
+      <img src="./images/cart-icon.svg" alt="cart-icon" height="70px"> <!-- Raleway Medium-->
+      <div class="red-integer"></div>
+    </div>
+  </header>
+  <div class="banner">
+    <h3 class="dif-font-banner">NEW COLLECTION</h3> <!-- Playfair-Display -->
+    <h1 class="big-text">Spring/Summer 2016</h1>
+  </div>
+  <div class=bbanner-text>
+    <h2 class="dual-font">Hand-Crafted <span>Styles</span></h2>
+    <!-- PlayfairDisplay Italic / PLayfair-display Bold-->
+    <h3>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our</h3>
+    <h3>current selection of products or sign-up for updates below.</h3> <!-- Raleway Light-->
+  </div>
+  <div class="category-frame">
+    <!-- RalweayMedium-->
+    <div class="category-1">
+      <h1>MEN'S</h1>
+    </div>
+    <div class="category-2">
+      <h1>TRENDS</h1>
+    </div>
+    <div class="category-3">
+      <h1>GLASSES</h1>
+    </div>
+    <div class="category-4">
+      <h1>SALE</h1>
+    </div>
+    <div class="category-5">
+      <h1>BAGS</h1>
+    </div>
+    <div class="category-6">
+      <h1>WOMEN'S</h1>
+    </div>
+  </div>
+  <div class="above-carousel">
+    <h1>Most-Loved <span>Products</span></h1> <!-- PlayfairDisplay Italic / PLayfair-display Bold-->
+  </div>
+  <!-- Category is Raleway Light Item name is PLayfair Display and Price is Raleway Light The Add to Cart button is Raleway Medium-->
+  <div class="main-carousel">
+    <div class="carousel-cell">
+      <img src="./images/stretch-knit-dress.jpg" />
+      <p>DRESSES</p>
+      <h3>Stretch Knit Dress</h3>
+      <p>$169.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/cotton-blue-shirt.jpg" />
+      <p>SHIRTS</p>
+      <h3>Cotton Blue Shirt</h3>
+      <p>$89.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/checked-stretch-dress.jpg" />
+      <p>DRESSES</p>
+      <h3>Checked Stretch Dress</h3>
+      <p>$129.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/blue-hipster-backpack.jpg" />
+      <p>BAGS</p>
+      <h3>Blue Hipster Backpack</h3>
+      <p>$69.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/blue-silk-dress.jpg" />
+      <p>DRESSES</p>
+      <h3>Blue Silk Dress</h3>
+      <p>$179.99</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/cotton-yellow-tshirt.jpg" />
+      <p>SHIRTS</p>
+      <h3>Cotton Yellow T-Shirt</h3>
+      <p>$69.99</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/demin-overall-shorts.jpg" />
+      <p>OVERALLS</p>
+      <h3>Denim Overall Shorts</h3>
+      <p>$89.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+    <div class="carousel-cell">
+      <img src="./images/pink-dotted-dress.jpg" />
+      <p>DRESSES</p>
+      <h3>Pink Dotted Dress</h3>
+      <p>$99.00</p>
+      <button class="add-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="bottom-banner">
+    <h1>Sign-Up for <span>Updates</span></h1> <!-- PlayfairDisplay Italic / PLayfair-display Bold-->
+    <h3>Stay updated on our latest product releases, be first to find out about</h3>
+    <h3 class="little-space"> upcoming sales, and get free style tips from our blog. Unsubscribe at anytime.</h3>
+    <div class=subscribe-button>
+      <form>
+        <input class="input-email" type="email" placeholder="Your Email" required>
+        <button class="button" id="subscription">Subscribe</button>
+        <!-- Input is Raleway Light/ Button is Raleway Medium-->
+      </form>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="left-stuff">
+      <h4><i class="fa fa-copyright"></i> 2016 Aloha Aparrel Co.</h4> <!-- Playfair Display-->
+      <h4 class="nospace">Powered by HTML and CSS.</h4>
+      <h4 class="spacer">604-604-6040. <span class="underline">info@alohaaparrel.com</span></h4>
+      <h4><span>1490 W Broadway</span></h4>
+      <h4 class="nospace"><span>Vancouver, BC, Canada</span></h4>
+    </div>
+    <div class="right-stuff">
+      <h4><i class="fa fa-facebook"></i>Facebook</h4> <!-- Raleway Light-->
+      <h4><i class="fa fa-twitter"></i>Twitter</h4>
+      <h4><i class="fa fa-instagram"></i>Instagram</h4>
+      <h4><i class="fa fa-pinterest"></i>Pinterest</h4>
+      <h4><i class="fa fa-google-plus"></i>Google+</h4>
+    </div>
+  </footer>
+</body>
+
+</html>
