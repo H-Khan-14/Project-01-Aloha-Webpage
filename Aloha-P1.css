@@ -40,6 +40,13 @@
 
 body {
   margin: 0 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
@@ -55,13 +62,33 @@ body {
   height: 10vh;
 }
 
+@media only screen and (max-width: 900px) {
+  #header {
+    flex-wrap: wrap;
+  }
+}
+
 .navigation-bar {
+  width: 100%;
   font-family: 'Raleway-Medium';
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: #e2574c;
+}
+
+@media only screen and (max-width: 900px) {
+  .aloha-logo-left {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation-bar {
+    order: 1;
+    width: 100%;
+  }
 }
 
 .aloha-logo-left {
@@ -92,10 +119,6 @@ body {
   font-family: 'Raleway-Medium';
 }
 
-#logo-work-plz {
-  height: 8vh;
-}
-
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(./images/banner-girl.png) no-repeat top 15vh center,
@@ -119,6 +142,16 @@ body {
 
 .big-text {
   font-size: 4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .big-text {
+    text-align: center;
+  }
+}
+
+.text-align {
+  text-align: center;
 }
 
 .bbanner-text {
@@ -151,7 +184,6 @@ body {
   font-size: 1.5em;
   width: 100%;
   height: 90vh;
-  padding: 10px;
   display: grid;
   grid-gap: 10px 10px;
   grid-template-rows: repeat(2, minmax(max-content, 1fr));
@@ -159,6 +191,18 @@ body {
   grid-template-areas:
     'a a b c'
     'd e f f';
+}
+
+@media only screen and (max-width: 600px) {
+  .category-frame {
+    grid-template-rows: repeat(4, minmax(max-content, 1fr));
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    grid-template-areas:
+      'a a'
+      'b c'
+      'd e'
+      'f f';
+  }
 }
 
 .category-1 {
@@ -227,10 +271,6 @@ body {
   color: white;
 }
 
-.nav-space {
-  margin: auto 2.5rem;
-}
-
 .above-carousel {
   display: flex;
   justify-content: center;
@@ -246,6 +286,7 @@ body {
 
 .main-carousel {
   padding-bottom: 7vh;
+  margin-bottom: 5vh;
 }
 
 .main-carousel p {
@@ -294,10 +335,37 @@ body {
 
 .little-space {
   margin-top: 0rem;
+  text-align: center;
 }
 
 .subscribe-button {
   position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .subscribe-button {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #subscription {
+    left: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-social-media {
+    display: none;
+  }
 }
 
 .button {
@@ -313,17 +381,29 @@ body {
   top: 4px;
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .input-email {
+  border-radius: 3rem;
   font-family: 'Raleway-Light';
-  padding: 0.85rem 10rem;
   font-size: 1.5rem;
   text-align: left;
-  border-radius: 3rem;
+  padding: 0.85rem 10rem;
 }
 
 .left-stuff {
   padding-left: 35px;
   font-family: 'PlayfairDisplay-Regular';
+}
+
+@media only screen and (max-width: 600px) {
+  .left-stuff {
+    text-align: center;
+  }
 }
 
 .left-stuff span {
@@ -363,9 +443,77 @@ body {
   font-family: 'Raleway-Light';
 }
 
+@media only screen and (max-width: 600px) {
+  #footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .right-stuff .fa {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fa {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .right-stuff h4 {
+    display: none;
+  }
+}
+
 .carousel-cell {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  #header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 18vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .input-email {
+    padding: 0.85rem 5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    border-radius: 3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .button {
+    border-radius: 3rem;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+  }
 }
